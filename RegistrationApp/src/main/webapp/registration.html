@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<title>Registration form</title>
+	</head>
+	<body bgcolor="beige">
+	<form method="get" action="RegistrationServlet">
+		<label> Enter Username : </label>
+		<input type="text" name="username" required/>
+		<br><br>
+		
+		<label> Enter Password : </label>
+		<input type="password" name="password" required/>
+		<br><br>
+		
+		<label> Enter Gender : </label>
+		<input type="radio" name="gender" value="Male"/>Male
+		<input type="radio" name="gender" value="Female"/>Female
+		<br><br>
+		
+		<label> Enter DOB : </label>
+		<input type="date" name="dob" required/>
+		<br><br>
+		
+		<label> Enter Phone number : </label>
+		<input type="number" name="phone" required/>
+		<br><br>
+		
+		<label> Enter Mail : </label>
+		<input type="email" name="mail" required/>
+		<br><br>
+		
+		<label> Country : </label>
+		<select name="country">
+			<option>India</option>
+			<option>U.S</option>
+			<option>U.K</option>
+			<option>Canada</option>
+		</select>
+		<br><br>	
+		
+		<label>Qualification</label>
+		<input type="checkbox" name="qualification" value="B.Tech"/>B.Tech
+		<input type="checkbox" name="qualification" value="M.Tech"/>M.Tech
+		<input type="checkbox" name="qualification" value="B.Sc"/>B.Sc
+		<input type="checkbox" name="qualification" value="M.Sc"/>M.Sc
+		<input type="checkbox" name="qualification" value="B.Com"/>B.Com
+		<br><br>
+		
+		<label> Languages : </label>
+		<select name="languages" size="3" multiple>
+			<option>Telugu</option>
+			<option>English</option>
+			<option>Hindi</option>
+			<option>Malyalam</option>
+			<option>Tamil</option>
+		</select>
+		<br><br>
+		
+		<label> Enter Comments : </label>
+			<textarea name ="comments" rows="3" cols="30">
+			</textarea>
+		<br><br>
+		
+		<input type="submit" name="Register">		
+	</form>
+</html>
